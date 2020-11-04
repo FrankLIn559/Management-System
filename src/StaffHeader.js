@@ -34,9 +34,9 @@ export default class StaffHeader extends React.Component{
 						<label for='idSelect'>人员筛选</label>
 						<select id='idSelect' ref="selId" onChange={this.handlerIdChange.bind(this)}>
 						    <option value='0'>全部</option>
-							<option value='1'>主任</option>
-							<option value='2'>老师</option>
-							<option value='3'>学生</option>
+							<option value='1'>项目经理</option>
+							<option value='2'>组长</option>
+							<option value='3'>成员</option>
 							<option value='4'>实习</option>
 						</select>
 					</td>

@@ -71,9 +71,9 @@ export default class StaffFooter extends React.Component{
 			    <div>
 				  <label for='staffAddId' style={{'display': 'block'}}>身份</label>
 				  <select ref='addId' id='staffAddId'>
-				    <option value='主任'>主任</option>
-				    <option value='老师'>老师</option>
-				    <option value='学生'>学生</option>
+				    <option value='经理'>经理</option>
+				    <option value='组长'>组长</option>
+				    <option value='成员'>成员</option>
 				    <option value='实习'>实习</option>
 				  </select>
 				</div>

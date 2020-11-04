@@ -103,9 +103,9 @@ export default class StaffDetail extends React.Component{
 				  <th>身份</th>
                   <td>
 				    <select ref="selId" id='staffEditId'>
-					  <option value="主任">主任</option>
-					  <option value="老师">老师</option>
-					  <option value="学生">学生</option>
+					  <option value="经理">经理</option>
+					  <option value="组长">组长</option>
+					  <option value="成员">成员</option>
 					  <option value="实习">实习</option>
 					</select>
 				  </td>

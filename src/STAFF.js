@@ -84,17 +84,17 @@ export default class STAFF {
 				break;
 			case 1: 
 			    this.staff = this.allStaff.filter(item => {
-				    return item.info.id == '主任';
+				    return item.info.id == '经理';
 				});
 				break;
 			case 2: 
 			    this.staff = this.allStaff.filter(item => {
-				    return item.info.id == '老师';
+				    return item.info.id == '组长';
 				});
 				break;
 			case 3: 
 			    this.staff = this.allStaff.filter(item => {
-				    return item.info.id == '学生';
+				    return item.info.id == '成员';
 				});
 				break;
 			case 4: 
@@ -113,11 +113,11 @@ export default class STAFF {
 		    case 0: //身份
 			    this.allStaff.forEach(item => {
 				    switch(item.info.id) {
-					  case '主任':
+					  case '经理':
 					      item.info.id = 1; break;
-					  case '老师':
+					  case '组长':
 					      item.info.id = 2; break;	
-					  case '学生':
+					  case '成员':
 					      item.info.id = 3; break;	
 					  case '实习':
 					      item.info.id = 4; break;
@@ -135,11 +135,11 @@ export default class STAFF {
 			    this.allStaff.forEach(item => {
 				    switch(item.info.id) {
 					  case 1:
-					      item.info.id = '主任'; break;
+					      item.info.id = '经理'; break;
 					  case 2:
-					      item.info.id = '老师'; break;	
+					      item.info.id = '组长'; break;	
 					  case 3:
-					      item.info.id = '学生'; break;	
+					      item.info.id = '成员'; break;	
 					  case 4:
 					      item.info.id = '实习'; break;
                       default: break;						  
@@ -200,14 +200,14 @@ export default class STAFF {
 	}
 } 
 //模拟数据库
-STAFF.rawData = [{ descrip:'我是一匹来自远方的狼。', sex: '男', age: 20, name: '张三', id: '主任'},
-                 { descrip:'我是一匹来自远方的狼。', sex: '女', age: 21, name: '赵静', id: '学生'},
-				 { descrip:'我是一匹来自远方的狼。', sex: '女', age: 22, name: '王二麻', id: '学生'},
-				 { descrip:'我是一匹来自远方的狼。', sex: '女', age: 24, name: '李晓婷', id: '实习'},
-				 { descrip:'我是一匹来自远方的狼。', sex: '男', age: 23, name: '张春田', id: '实习'},
-				 { descrip:'我是一匹来自远方的狼。', sex: '男', age: 22, name: '刘建国', id: '学生'},
-				 { descrip:'我是一匹来自远方的狼。', sex: '男', age: 24, name: '张八', id: '主任'},
-                 { descrip:'我是一匹来自远方的狗。', sex: '男', age: 35, name: '李四', id: '老师'},
-				 { descrip:'我是一匹来自远方的猪。', sex: '男', age: 42, name: '王五', id: '学生'},
-				 { descrip:'我是一匹来自远方的牛。', sex: '男', age: 50, name: '赵六', id: '实习'},
-				 { descrip:'我是一匹来自远方的马。', sex: '男', age: 60, name: '孙七', id: '实习'}];
+STAFF.rawData = [{ descrip:'test1', sex: '男', age: 20, name: '张三', id: '经理'},
+                 { descrip:'test2', sex: '女', age: 21, name: '赵静', id: '成员'},
+				 { descrip:'test3', sex: '女', age: 22, name: '王二麻', id: '成员'},
+				 { descrip:'test4', sex: '女', age: 24, name: '李晓婷', id: '实习'},
+				 { descrip:'test5', sex: '男', age: 23, name: '张春田', id: '组长'},
+				 { descrip:'test6', sex: '男', age: 22, name: '刘建国', id: '成员'},
+				 { descrip:'test7', sex: '男', age: 24, name: '张八', id: '经理'},
+                 { descrip:'test8', sex: '男', age: 35, name: '李四', id: '组长'},
+				 { descrip:'test9', sex: '男', age: 42, name: '王五', id: '成员'},
+				 { descrip:'test10', sex: '男', age: 50, name: '赵六', id: '实习'}
+				];
